@@ -1,0 +1,19 @@
+@import "colores";
+
+#caja {
+    width: calc(20vw + 946px);
+    height: auto;
+    margin: 20px auto;
+    
+}
+
+
+.guia a {
+    color: $color3;
+}
+
+.sub {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}

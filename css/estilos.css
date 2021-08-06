@@ -1,0 +1,479 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+body {
+  background: #f3f3eb;
+}
+
+.header {
+  height: 100%;
+  width: 100%;
+  padding: 1px;
+  background: #7b7b7b;
+  background: linear-gradient(180deg, #7b7b7b 10%, #7f8f84 22%, #f3f3eb 100%);
+}
+
+/*--titulo---*/
+.titulo1 h1 {
+  font-size: 100px;
+  color: #215720;
+  font-family: "Luckiest Guy", cursive;
+  padding: auto;
+  margin: 10px 200px;
+}
+
+/* efecto de titulo1 */
+.titulo1 h1 {
+  -webkit-animation: tracking-in-contract-bck-top 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract-bck-top 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+/* fi de efecto */
+/*----nav--menu----*/
+#logo {
+  width: 150px !important;
+  height: 150px !important;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.nav-item {
+  display: inline-block;
+  font-size: 15px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #dee9d8;
+  margin-right: 1em;
+}
+.nav-item .nav-link {
+  color: #215720 !important;
+}
+
+.navbar .navbar-nav .nav-item .dropdown-menu {
+  background-color: #dee9d8;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.d-flex {
+  margin-right: 1em;
+}
+
+/* fin de nav */
+/* main---imagenes */
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+.titulo2 h2 {
+  text-align: center;
+  font-size: 50px;
+  color: #215720;
+  font-family: "RocknRoll One", sans-serif;
+}
+
+.imag1 {
+  width: 44%;
+  border-style: solid;
+  border-color: cadetblue;
+}
+
+.imag2 {
+  width: 39%;
+  height: 10;
+  border-style: solid;
+  border-color: cadetblue;
+}
+
+.imag1 {
+  transition: all 0.5s linear;
+}
+
+.imag1:hover {
+  transform: scale(1.1);
+}
+
+.imag2 {
+  transition: all 0.5s linear;
+}
+
+.imag2:hover {
+  transform: scale(1.1);
+}
+
+/* -- inicio slider -- */
+.section2 {
+  background-color: #c4e9c6;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  width: 800px;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 800px;
+  height: 400px;
+}
+
+/* slide manual */
+.navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -100px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #215720;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #215720;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 400px;
+}
+
+.navigation-auto div {
+  border: 2px solid #215720;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #215720;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #215720;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #215720;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: #215720;
+}
+
+/* info y suscri */
+.aside {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #7b7b7b;
+  background: linear-gradient(194deg, #7b7b7b 10%, #7f8f84 22%, #c4e9c6 100%);
+}
+
+.tel {
+  text-align: center;
+  padding: 1em;
+  color: #fdfffd;
+}
+
+.celu {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.tel i {
+  padding: 0.5em;
+  font-size: 3em;
+}
+
+.envios {
+  text-align: center;
+  padding: 1em;
+  color: #eee;
+}
+
+.camion {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.envios i {
+  padding: 0.5em;
+  font-size: 3em;
+}
+
+.aside .p {
+  font-size: 25px;
+}
+
+.suscri {
+  height: 20%;
+  width: 30%;
+  padding: 20px 10px;
+  font-size: 30px;
+}
+
+.suscri .sus {
+  text-align: center;
+}
+
+/* fin-- info y suscri */
+/* footer */
+.footer {
+  background: #7b7b7b;
+  background: linear-gradient(16deg, #7b7b7b 10%, #7f8f84 22%, #c4e9c6 100%);
+  padding: 1em 1em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.footer .titulofin {
+  width: 30%;
+  padding: 10px;
+  color: #215720;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.titulofin h5 {
+  font-size: 90px;
+  text-align: center;
+}
+
+.titulofin p {
+  font-size: 40px;
+  text-align: center;
+}
+
+.logofin {
+  width: 70px;
+  height: 70px;
+  background: #dee9d8;
+  text-decoration: none;
+  text-align: center;
+  line-height: 70px;
+  font-size: 32px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+
+.logofin .fa {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.logofin:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  transition: 0.5s;
+}
+
+.logofin:hover:before {
+  top: 0;
+}
+
+.logofin:hover .fa-instagram {
+  transform: rotateY(360deg);
+  color: #e1306c;
+}
+
+.footer .menufin {
+  margin: auto;
+}
+
+.menufin li {
+  background-color: #dee9d8;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.menu {
+  color: #215720;
+}
+
+.menufin.menu3 {
+  font-size: 25px;
+  color: #444644;
+}
+
+.menu3 :hover {
+  color: #7f8f85;
+}
+
+@media screen and (max-width: 768px) {
+  .titulo1 {
+    display: none;
+  }
+
+  .container_img {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider {
+    width: 350px;
+    height: 300px;
+  }
+
+  .slide img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .navigation-manual {
+    width: 400px;
+    margin-top: -190px;
+  }
+
+  .navigation-auto {
+    width: 400px;
+    margin-top: 310px;
+  }
+
+  .aside {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 360px) {
+  .titulo1 {
+    display: none;
+  }
+
+  .nv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container_img {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider {
+    width: 400px;
+    height: 300px;
+  }
+
+  .slide img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .navigation-manual {
+    width: 400px;
+    margin-top: -190px;
+  }
+
+  .navigation-auto {
+    width: 400px;
+    margin-top: 310px;
+  }
+
+  .aside {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=estilos.css.map */

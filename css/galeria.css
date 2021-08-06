@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    color: #000;
+    text-align:center;
+    font-size:40px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    text-shadow: 5px 5px 10px;
+}
+
+.caja{
+    background-color:darkgray;
+    border: 2px solid #000;
+    width:80%;
+    margin:auto;
+    height: auto;
+    padding:2%;
+    display:grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.item{
+    min-height: 200px;
+    min-width: 200px;
+    background-color: aqua;
+    border: 2px solid #fff;
+}
+.item:hover{
+    transform: scale(1.2);
+    transition:0.7s;
+    filter:sepia(1);
+    box-shadow: 5px 5px 10px 1px #000;
+}
+
+.ima1{
+    grid-area: "ima1";
+    background-color:coral;
+    background-image: url(../images/code-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.ima2{
+    grid-area: "ima2";
+    background-color:cadetblue;
+    background-image: url(../images/code-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.ima3{
+    grid-area: "ima3";
+    background-color:fuchsia;
+    background-image: url(../images/code-3.jpg);
+    background-size: cover;
+    background-position: center;
+}.ima4{
+    grid-area: "ima4";
+    background-color:forestgreen;
+    background-image: url(../images/code-4.jpg);
+    background-size: cover;
+    background-position: center;
+}.ima5{
+    grid-area: "ima5";
+    background-color:firebrick;
+    background-image: url(../images/code-5.jpg);
+    background-size: cover;
+    background-position: center;
+}.ima6{
+    grid-area: "ima6";
+    background-color:dodgerblue;
+    background-image: url(../images/code-6.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+@media screen and (max-width:768px) {
+    .caja{
+        background-color: aquamarine;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+.item1{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}.item4{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}.item3{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-position: center;
+}.item2{
+    grid-row-start: 3;
+    grid-row-end: 1;
+}
+}

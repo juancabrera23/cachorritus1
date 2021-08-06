@@ -1,0 +1,45 @@
+@import "colores";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none !important;
+
+}
+
+
+body {
+    background:  $color1  !important;
+}
+@import "header";
+
+@import "main";
+
+
+@import "footer";
+
+@media screen and (max-width:360px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(0, 1fr 1fr);
+
+    }
+}
+
+@media screen and (max-width:1024px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(0, 1fr 1fr);
+
+    }
+}
