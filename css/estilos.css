@@ -7,6 +7,8 @@
 
 body {
   background: #f3f3eb;
+  margin: auto;
+  padding: auto;
 }
 
 .header {
@@ -35,7 +37,6 @@ body {
 @-webkit-keyframes tracking-in-contract-bck-top {
   0% {
     letter-spacing: 1em;
-    -webkit-transform: translateZ(400px) translateY(-300px);
     transform: translateZ(400px) translateY(-300px);
     opacity: 0;
   }
@@ -43,7 +44,6 @@ body {
     opacity: 0.6;
   }
   100% {
-    -webkit-transform: translateZ(0) translateY(0);
     transform: translateZ(0) translateY(0);
     opacity: 1;
   }
@@ -51,7 +51,6 @@ body {
 @keyframes tracking-in-contract-bck-top {
   0% {
     letter-spacing: 1em;
-    -webkit-transform: translateZ(400px) translateY(-300px);
     transform: translateZ(400px) translateY(-300px);
     opacity: 0;
   }
@@ -59,7 +58,6 @@ body {
     opacity: 0.6;
   }
   100% {
-    -webkit-transform: translateZ(0) translateY(0);
     transform: translateZ(0) translateY(0);
     opacity: 1;
   }
@@ -140,7 +138,8 @@ body {
 
 /* -- inicio slider -- */
 .section2 {
-  background-color: #c4e9c6;
+  background: #f3f3eb;
+  background: linear-gradient(0deg, #f3f3eb 0%, #c4e9c6 50%, #f3f3eb 100%);
   height: 400px;
   width: 100%;
   display: flex;
@@ -409,6 +408,10 @@ body {
     display: none;
   }
 
+  .bus .me-2 {
+    width: 100px;
+  }
+
   .container_img {
     display: flex;
     flex-direction: column;
@@ -437,15 +440,41 @@ body {
   .aside {
     flex-direction: column;
   }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titulofin h5 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .titulofin p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .suscri {
+    font-size: 20px;
+  }
+
+  .suscri .sus .email {
+    width: 180px;
+  }
+
+  .suscri .sus h4 {
+    text-align: start;
+  }
 }
 @media screen and (max-width: 360px) {
   .titulo1 {
     display: none;
   }
 
-  .nv {
-    display: flex;
-    flex-direction: column;
+  .bus .me-2 {
+    width: 100px;
   }
 
   .container_img {
@@ -475,5 +504,32 @@ body {
 
   .aside {
     flex-direction: column;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titulofin h5 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .titulofin p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .suscri {
+    font-size: 20px;
+  }
+
+  .suscri .sus .email {
+    width: 180px;
+  }
+
+  .suscri .sus h4 {
+    text-align: start;
   }
 }/*# sourceMappingURL=estilos.css.map */

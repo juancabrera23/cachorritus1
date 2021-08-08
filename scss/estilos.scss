@@ -11,7 +11,8 @@
 
 body {
     background: #f3f3eb;
-
+margin: auto;
+padding: auto;
 }
 
 
@@ -165,7 +166,8 @@ body {
 
 /* -- inicio slider -- */
 .section2 {
-    background-color: #c4e9c6;
+    background: rgb(243,243,235);
+background: linear-gradient(0deg, rgba(243,243,235,1) 0%, rgba(196,233,198,1) 50%, rgba(243,243,235,1) 100%);
     height: 400px;
     width: 100%;
     display: flex;
@@ -440,7 +442,9 @@ body {
         display: none;
     }
 
-   
+    .bus .me-2{
+        width: 100px;
+    }
 
     .container_img {
         display: flex;
@@ -470,6 +474,34 @@ body {
     .aside {
         flex-direction: column;
     }
+
+    
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulofin h5 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .titulofin p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .suscri {
+        font-size: 20px;
+    }
+
+    .suscri .sus .email{
+        width: 180px;
+    }
+
+    .suscri .sus h4{
+        text-align:start;
+    }
 }
 
 @media screen and (max-width:360px) {
@@ -477,9 +509,9 @@ body {
         display: none;
     }
 
-    .nv {
-        display: flex;
-        flex-direction: column ;
+
+    .bus .me-2{
+        width: 100px;
     }
 
     .container_img {
@@ -509,5 +541,32 @@ body {
 
     .aside {
         flex-direction: column;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulofin h5 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .titulofin p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .suscri {
+        font-size: 20px;
+    }
+
+    .suscri .sus .email{
+        width: 180px;
+    }
+
+    .suscri .sus h4{
+        text-align:start;
     }
 }
