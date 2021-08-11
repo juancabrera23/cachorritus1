@@ -17,6 +17,8 @@ body {
   padding: 1px;
   background: #7b7b7b;
   background: linear-gradient(180deg, #7b7b7b 10%, #7f8f84 22%, #f3f3eb 100%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*--titulo---*/
@@ -37,6 +39,7 @@ body {
 @-webkit-keyframes tracking-in-contract-bck-top {
   0% {
     letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
     transform: translateZ(400px) translateY(-300px);
     opacity: 0;
   }
@@ -44,6 +47,7 @@ body {
     opacity: 0.6;
   }
   100% {
+    -webkit-transform: translateZ(0) translateY(0);
     transform: translateZ(0) translateY(0);
     opacity: 1;
   }
@@ -51,6 +55,7 @@ body {
 @keyframes tracking-in-contract-bck-top {
   0% {
     letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
     transform: translateZ(400px) translateY(-300px);
     opacity: 0;
   }
@@ -58,6 +63,7 @@ body {
     opacity: 0.6;
   }
   100% {
+    -webkit-transform: translateZ(0) translateY(0);
     transform: translateZ(0) translateY(0);
     opacity: 1;
   }
@@ -69,6 +75,7 @@ body {
   height: 150px !important;
   margin: 5px;
   border-radius: 50%;
+  margin-right: 10rem;
 }
 
 .nav-item {
@@ -92,12 +99,26 @@ body {
 .d-flex {
   margin-right: 1em;
 }
+.d-flex #buscar {
+  width: 180px;
+}
+
+#compra {
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+#bus {
+  justify-content: flex-end;
+}
 
 /* fin de nav */
 /* main---imagenes */
 .main {
   height: 100%;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .titulo2 h2 {
@@ -259,6 +280,8 @@ body {
   align-items: center;
   background: #7b7b7b;
   background: linear-gradient(194deg, #7b7b7b 10%, #7f8f84 22%, #c4e9c6 100%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tel {
@@ -387,7 +410,6 @@ body {
   background-color: #dee9d8;
   border: 1px solid;
   border-radius: 5px;
-  font-size: 25px;
 }
 
 .menu {
@@ -403,7 +425,76 @@ body {
   color: #7f8f85;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
+  #logo {
+    margin-right: 2rem;
+  }
+
+  .titulofin h5 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .titulofin p {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .suscri {
+    font-size: 20px;
+  }
+
+  .suscri .sus .email {
+    width: 180px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .titulo1 {
+    display: none;
+  }
+
+  .titulofin h5 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .titulofin p {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .suscri {
+    font-size: 20px;
+  }
+
+  .suscri .sus .email {
+    width: 180px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .titulo1 {
+    display: none;
+  }
+
+  .titulofin h5 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .titulofin p {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .suscri {
+    font-size: 20px;
+  }
+
+  .suscri .sus .email {
+    width: 180px;
+  }
+}
+@media only screen and (max-width: 768px) {
   .titulo1 {
     display: none;
   }
@@ -441,11 +532,6 @@ body {
     flex-direction: column;
   }
 
-  .footer {
-    display: flex;
-    flex-direction: column;
-  }
-
   .titulofin h5 {
     font-size: 30px;
     text-align: center;
@@ -454,6 +540,10 @@ body {
   .titulofin p {
     font-size: 20px;
     text-align: center;
+  }
+
+  .menufin .menu3 .menu {
+    font-size: 20px;
   }
 
   .suscri {
@@ -468,7 +558,53 @@ body {
     text-align: start;
   }
 }
-@media screen and (max-width: 360px) {
+@media only screen and (max-width: 576px) {
+  .suscri .sus .email {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .suscri .sus .email {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #logo {
+    margin-right: 1px;
+  }
+
+  .nv {
+    justify-content: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menufin .menu3 .menu {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #logo {
+    margin-right: 1px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menufin .menu3 .menu {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  #logo {
+    margin-right: 1px;
+  }
+
   .titulo1 {
     display: none;
   }
@@ -519,6 +655,10 @@ body {
   .titulofin p {
     font-size: 20px;
     text-align: center;
+  }
+
+  .menufin .menu3 .menu {
+    font-size: 15px;
   }
 
   .suscri {

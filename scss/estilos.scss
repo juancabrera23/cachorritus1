@@ -23,7 +23,8 @@ padding: auto;
     padding: 1px;
     background: rgb(123, 123, 123);
     background: linear-gradient(180deg, rgba(123, 123, 123, 1) 10%, rgba(127, 143, 132, 1) 22%, rgba(243, 243, 235, 1) 100%);
-
+margin-left: auto;
+margin-right: auto;
 }
 
 /*--titulo---*/
@@ -89,7 +90,7 @@ padding: auto;
     height: 150px !important;
     margin: 5px;
     border-radius: 50%;
-
+    margin-right: 10rem;
 }
 
 .nav-item {
@@ -114,14 +115,24 @@ padding: auto;
 
 .d-flex {
     margin-right: 1em;
+    #buscar{
+        width: 180px;
+    }
 }
-
+#compra{
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+#bus{
+    justify-content: flex-end;
+}
 /* fin de nav */
 /* main---imagenes */
 .main {
     height: 100%;
     width: 100%;
-
+margin-left: auto;
+margin-right: auto;
 }
 
 .titulo2 h2 {
@@ -287,6 +298,8 @@ background: linear-gradient(0deg, rgba(243,243,235,1) 0%, rgba(196,233,198,1) 50
     align-items: center;
     background: rgb(123, 123, 123);
     background: linear-gradient(194deg, rgba(123, 123, 123, 1) 10%, rgba(127, 143, 132, 1) 22%, rgba(196, 233, 198, 1) 100%);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tel {
@@ -418,7 +431,7 @@ background: linear-gradient(0deg, rgba(243,243,235,1) 0%, rgba(196,233,198,1) 50
     background-color: #dee9d8;
     border: 1px solid;
     border-radius: 5px;
-    font-size: 25px;
+    // font-size: 25px;
 
 }
 
@@ -435,9 +448,75 @@ background: linear-gradient(0deg, rgba(243,243,235,1) 0%, rgba(196,233,198,1) 50
     color: #7f8f85;
 }
 
+@media only screen and (max-width:1024px) {
+    #logo {
+        margin-right: 2rem;
+    }
+    
+    .titulofin h5 {
+        font-size: 60px;
+        text-align: center;
+    }
+    .titulofin p {
+        font-size: 40px;
+        text-align: center;
+    }
+    .suscri {
+        font-size: 20px;
+    }
+    .suscri .sus .email{
+        width: 180px;
+    }
+    
 
+}
 
-@media screen and (max-width:768px) {
+@media only screen and (max-width:992px) {
+    .titulo1 {
+        display: none;
+    }
+    
+    
+    .titulofin h5 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .titulofin p {
+        font-size: 30px;
+        text-align: center;
+    }
+    .suscri {
+        font-size: 20px;
+    }
+    .suscri .sus .email{
+        width: 180px;
+    }
+    
+}
+
+@media only screen and (max-width:991px) {
+    .titulo1 {
+        display: none;
+    }
+    
+    .titulofin h5 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .titulofin p {
+        font-size: 30px;
+        text-align: center;
+    }
+    .suscri {
+        font-size: 20px;
+    }
+    .suscri .sus .email{
+        width: 180px;
+    }
+    
+}
+
+@media only screen and (max-width:768px) {
     .titulo1 {
         display: none;
     }
@@ -475,12 +554,6 @@ background: linear-gradient(0deg, rgba(243,243,235,1) 0%, rgba(196,233,198,1) 50
         flex-direction: column;
     }
 
-    
-    .footer{
-        display: flex;
-        flex-direction: column;
-    }
-
     .titulofin h5 {
         font-size: 30px;
         text-align: center;
@@ -489,6 +562,10 @@ background: linear-gradient(0deg, rgba(243,243,235,1) 0%, rgba(196,233,198,1) 50
     .titulofin p {
         font-size: 20px;
         text-align: center;
+    }
+
+    .menufin .menu3 .menu {
+        font-size: 20px;
     }
 
     .suscri {
@@ -504,7 +581,54 @@ background: linear-gradient(0deg, rgba(243,243,235,1) 0%, rgba(196,233,198,1) 50
     }
 }
 
-@media screen and (max-width:360px) {
+@media only screen and (max-width:576px){
+    .suscri .sus .email{
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width:575px){
+    .suscri .sus .email{
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    #logo {
+        margin-right: 1px;
+    }
+    
+    .nv{
+        justify-content: center;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .menufin .menu3 .menu {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    #logo {
+        margin-right: 1px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .menufin .menu3 .menu {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    #logo {
+        margin-right: 1px;
+    }
+    
     .titulo1 {
         display: none;
     }
@@ -556,6 +680,11 @@ background: linear-gradient(0deg, rgba(243,243,235,1) 0%, rgba(196,233,198,1) 50
     .titulofin p {
         font-size: 20px;
         text-align: center;
+    }
+
+    .menufin .menu3 .menu {
+        font-size: 15px;
+        
     }
 
     .suscri {
