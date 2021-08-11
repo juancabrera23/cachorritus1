@@ -13,6 +13,7 @@ body {
     background: #f3f3eb;
 margin: auto;
 padding: auto;
+
 }
 
 
@@ -133,6 +134,7 @@ margin-right: auto;
     width: 100%;
 margin-left: auto;
 margin-right: auto;
+padding: 0.5rem;
 }
 
 .titulo2 h2 {
@@ -140,6 +142,7 @@ margin-right: auto;
     font-size: 50px;
     color: #215720;
     font-family: 'RocknRoll One', sans-serif;
+    padding: auto;
 }
 
 
@@ -590,6 +593,88 @@ background: linear-gradient(0deg, rgba(243,243,235,1) 0%, rgba(196,233,198,1) 50
 @media only screen and (max-width:575px){
     .suscri .sus .email{
         width: 150px;
+    }
+}
+@media only screen and (max-width:499px) {
+    #logo {
+        margin-right: 1px;
+    }
+    
+    .nv{
+        justify-content: center;
+    }
+
+    .navigation-manual {
+        width: 300px;
+        margin-top: -190px;
+    }
+
+    .navigation-auto {
+        width: 300px;
+        margin-top: 310px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .menufin .menu3 .menu {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:497px) {
+    #logo {
+        margin-right: 1px;
+    }
+    
+    .nv{
+        justify-content: center;
+    }
+
+    .navigation-manual {
+        width: 300px;
+        margin-top: -190px;
+    }
+
+    .navigation-auto {
+        width: 300px;
+        margin-top: 310px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .menufin .menu3 .menu {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:427px) {
+    #logo {
+        margin-right: 1px;
+    }
+    
+    .nv{
+        justify-content: center;
+    }
+
+    .navigation-manual {
+        width: 300px;
+        margin-top: -190px;
+    }
+
+    .navigation-auto {
+        width: 300px;
+        margin-top: 310px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .menufin .menu3 .menu {
+        font-size: 15px;
     }
 }
 
