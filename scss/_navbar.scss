@@ -30,18 +30,16 @@
 }
 
 .d-flex {
-    margin-right: 1em;
+    
 
     #buscar {
         width: 180px;
     }
 }
-
+.iconos{
+    display: flex;
+    justify-content: flex-end;
 #compra {
-    justify-content: flex-end;
-    margin-top: 1rem;
+    margin-left: 1rem;
 }
-
-#bus {
-    justify-content: flex-end;
 }

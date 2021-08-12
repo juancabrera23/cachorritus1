@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="alimento para perro, alimento para gato, royal canin, pro plan, cachorritus, accesorios para perros, accesorios para gatos, perro, gato, pelotas para perros, golosinas para perros">
-	<meta name="author" content="Juan Gabriel Cabrera">
-	<meta name="country" content="Argentina">
-	<meta name="city" content=""Buenos Aires>
-	<meta name="languaje" content="Spanish">
-	<meta name="description" content="Encontrá en Cachorritus los mejores productos para mascotas. Compra online alimento, accesorios y mucho más!">
+    <meta name="keywords"
+        content="alimento para perro, alimento para gato, royal canin, pro plan, cachorritus, accesorios para perros, accesorios para gatos, perro, gato, pelotas para perros, golosinas para perros">
+    <meta name="author" content="Juan Gabriel Cabrera">
+    <meta name="country" content="Argentina">
+    <meta name="city" content="" Buenos Aires>
+    <meta name="languaje" content="Spanish">
+    <meta name="description"
+        content="Encontrá en Cachorritus los mejores productos para mascotas. Compra online alimento, accesorios y mucho más!">
     <title>Cachorritus</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,70 +24,94 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
 
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="../css/contactos.css">
 </head>
 
 <body>
 
     <header class="header">
-       
-        <div class="titulo1">
-            <h1>Cachorritus</h1>
+        <div class="container ">
+            <nav id="menu" class="navbar navbar-expand-lg navbar-light  ">
+                <div class="container nv">
+                    <a href="../index.html" class="navbar-brand">
+                        <img id="logo" src="../images/logo.PNG" alt="LogoCachorritus">
+                    </a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                        data-bs-target="#MenuNavegacion" aria-controls="navbarnav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="MenuNavegacion" class="collapse navbar-collapse max-height ">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="alimento.html"
+                                    role="button" data-bs-toggle="dropdown">Alimento</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="alimento.html" class="dropdown-item">Alimento seco</a></li>
+                                    <li><a href="alimento.html" class="dropdown-item">Alimento Humedo</a></li>
+                                    <li><a class="dropdown-item" href="alimento.html">Alimentos medicados</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="accesorios.html"
+                                    role="button" data-bs-toggle="dropdown">Accesorios</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="accesorios.html"> Juguetes </a> </li>
+                                    <li><a class="dropdown-item" href="accesorios.html"> camas y cuchas </a> </li>
+                                    <li><a class="dropdown-item" href="accesorios.html"> comederos y bebederos </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="accesorios.html"> elementos de paseos </a></li>
+                                    <li><a class="dropdown-item" href="accesorios.html"> rascadores </a> </li>
+                                    <li><a class="dropdown-item" href="accesorios.html"> transportadoras </a> </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="golosinas.html"
+                                    role="button" data-bs-toggle="dropdown">Golosinas</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="golosinas.html">snacks secas</a></li>
+                                    <li><a class="dropdown-item" href="golosinas.html">huesos y cueros</a></li>
+                                    <li><a class="dropdown-item" href="golosinas.html">snacks cat</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="indumentaria.html"
+                                    role="button" data-bs-toggle="dropdown">Indumentaria</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"> capas </a> </li>
+                                    <li><a class="dropdown-item" href="#"> capas de lluvia </a> </li>
+                                    <li><a class="dropdown-item" href="#"> botitas </a> </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
+                                    href="esteticaehigiene.html" role="button" data-bs-toggle="dropdown">Estética e
+                                    Higiene</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">cepillos, guantes y cardinas</a> </li>
+                                    <li><a class="dropdown-item" href="#">cortauñas</a> </li>
+                                    <li><a class="dropdown-item" href="#">cuidado dental</a> </li>
+                                    <li><a class="dropdown-item" href="#">repelentes</a> </li>
+                                    <li><a class="dropdown-item" href="#">shampoo y acondicionador </a> </li>
+                                    <li><a class="dropdown-item" href="#">elementos sanitarios </a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="iconos">
+            <form id="bus" class="d-flex ">
+				<input id="buscar" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+				<button class="btn btn-outline-success" type="submit"><i class="fad fa-search"></i></button>
+			</form>
+        
+			<form id="compra" class="d-flex">
+				<button class="btn btn-outline-success" type="submit">
+					<i class="fad fa-shopping-cart"></i>
+					<span class="badge bg-success text-white ms-1 rounded-pill">0</span>
+				</button>
+			</form>
         </div>
-        <nav>
-            <div class="div1"><a href="../index.html"><img class="logo" src="../images/logo.PNG" alt="logo de cachorritus"></a></div>
-            <ul class="menu1">
-                <li class="m"><a class="menu" href="../index.html"><i class="fad fa-home-alt"></i>Inicio</a></li>
-                <li class="m"><a class="menu" href="alimento.html">Alimentos</a>
-                    <ul>
-                        <li><a class="submenu" href="#"> alimentos secos </a> </li>
-                        <li><a class="submenu" href="#"> alimentos humedos </a> </li>
-                        <li><a class="submenu" href="#"> alimentos medicados </a> </li>
-                    </ul>
-                </li>
-                <li class="m"><a class="menu" href="golosinas.html">Golosinas</a>
-                    <ul>
-                        <li><a class="submenu" href="#"> snacks secas </a></li>
-                        <li><a class="submenu" href="#"> huesos y cueros </a> </li>
-                        <li><a class="submenu" href="#"> snacks cat </a> </li>
-                    </ul>
-                </li>
-                <li class="m"><a class="menu" href="accesorios.html">Accesorios</a>
-                    <ul>
-                        <li><a class="submenu" href="#"> juguetes </a> </li>
-                        <li><a class="submenu" href="#"> camas y cuchas </a> </li>
-                        <li><a class="submenu" href="#"> comederos y bebederos </a> </li>
-                        <li><a class="submenu" href="#"> elementos de paseos </a></li>
-                        <li><a class="submenu" href="#"> rascadores </a> </li>
-                        <li><a class="submenu" href="#"> transportadoras </a> </li>
-                    </ul>
-                </li>
-                <li class="m"><a class="menu" href="indumentaria.html">Indumentaria</a>
-                    <ul>
-                        <li><a class="submenu" href="#"> capas </a> </li>
-                        <li><a class="submenu" href="#"> capas de lluvia </a> </li>
-                        <li><a class="submenu" href="#"> botitas </a> </li>
-                    </ul>
-                </li>
-                <li class="m"><a class="menu" href="#">Estética e Higiene</a>
-                    <ul>
-                        <li><a class="submenu" href="#">cepillos, guantes y cardinas</a> </li>
-                        <li><a class="submenu" href="#">cortauñas</a> </li>
-                        <li><a class="submenu" href="#">cuidado dental</a> </li>
-                        <li><a class="submenu" href="#">repelentes</a> </li>
-                        <li><a class="submenu" href="#">shampoo y acondicionador </a> </li>
-                        <li><a class="submenu" href="#">elementos sanitarios </a> </li>
-                    </ul>
-                </li>
-            </ul>
-
-            <div class="icono">
-                <a href="#"><i class="fas fa-search"></i></a>
-                <a href="#"><i class="fas fa-user"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-            </div>
-
-        </nav>
+        </div>
     </header>
 
     <main class="principal">
@@ -97,15 +123,15 @@
                 <p>Por cualquier duda o consulta, mandanos un email o completá el formulario a continuación.</p>
             </div>
         </div>
-        <section class=" container ">
-            <article class="nosotros__art reverse ">
-                <div  class="nosotros__art">
-                <img src="../images/compu.jpg" alt="imagen">
-            </div>
-                <div class="nosotros__art--txt">
+        <section class=" contacto ">
+            <article class="nosotros__art">
+                <div class="nosotros__ar">
+                    <img src="../images/compu.jpg" alt="imagen">
+                </div>
+                <div class="nosotros__artt--txt">
                     <p>Retiro, CABA - Argentina</p>
                     <p>Teléfono:+549(11)xxxxxxxxx</p>
-                    <p>Horarios: de 10-00 am a 6-00 pm</p>
+                    <p>Horarios: de 10:00 am a 6:00 pm</p>
                     <p>
                         E-mail
                         <a href="mailto:cachorritus.dog@gmail.com">hola@cachorritus.com</a>
@@ -132,8 +158,8 @@
                     <option>accesorios</option>
                 </select></div> <br>
             <div><textarea name="#" id="#" cols="30" rows="10" placeholder="Mensaje"></textarea></div>
-                <input type="submit">
-                <input type="reset" value="Borrar todo">
+            <input type="submit">
+            <input type="reset" value="Borrar todo">
         </div>
     </form>
 
@@ -157,6 +183,13 @@
 
             </ul>
         </div>
+        <div class="suscri">
+			<form class="sus">
+				<h4>Suscribite y recibí descuentos increíbles!</h4>
+				<input class="email" type="email" placeholder="ingresa tu email" name="email">
+				<input type="submit" value="suscribirme!">
+			</form>
+		</div>
 
     </footer>
 </body>
