@@ -10,7 +10,7 @@
 }
 
 body {
-    background: #f3f3eb;
+    background: $color1;
     margin: auto;
     padding: auto;
 
@@ -22,24 +22,24 @@ body {
     height: 100%;
     width: 100%;
     padding: 1px;
-    background: rgb(123, 123, 123);
-    background: linear-gradient(180deg, rgba(123, 123, 123, 1) 10%, rgba(127, 143, 132, 1) 22%, rgba(243, 243, 235, 1) 100%);
+    background: $color2;
+    background: $linea;
     margin-left: auto;
     margin-right: auto;
 }
 
-/*--titulo---*/
+// titulo
 .titulo1 h1 {
     font-size: 100px;
 
-    color: #215720;
+    color: $color3;
     font-family: 'Luckiest Guy', cursive;
     padding: auto;
     margin: 10px 200px;
 
 }
 
-/* efecto de titulo1 */
+// efecto de titulo1
 .titulo1 h1 {
     -webkit-animation: tracking-in-contract-bck-top 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     animation: tracking-in-contract-bck-top 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -83,8 +83,8 @@ body {
     }
 }
 
-/* fi de efecto */
-/*----nav--menu----*/
+// fi de efecto
+// nav--menu
 
 #logo {
     width: 150px !important;
@@ -131,8 +131,8 @@ body {
     justify-content: flex-end;
 }
 
-/* fin de nav */
-/* main---imagenes */
+// fin de nav
+// main---imagenes
 .main {
     height: 100%;
     width: 100%;
@@ -144,7 +144,7 @@ body {
 .titulo2 h2 {
     text-align: center;
     font-size: 50px;
-    color: #215720;
+    color: $color3;
     font-family: 'RocknRoll One', sans-serif;
     padding: auto;
 }
@@ -153,17 +153,15 @@ body {
 
 .imag1 {
     width: 44%;
-
     border-style: solid;
-    border-color: cadetblue;
+    border-color: $color11;
 }
 
 .imag2 {
     width: 39%;
     height: 10;
-
     border-style: solid;
-    border-color: cadetblue;
+    border-color: $color11;
 }
 
 .imag1 {
@@ -182,10 +180,10 @@ body {
     transform: scale(1.1);
 }
 
-/* -- inicio slider -- */
+//  inicio slider 
 .section2 {
-    background: rgb(243, 243, 235);
-    background: linear-gradient(0deg, rgba(243, 243, 235, 1) 0%, rgba(196, 233, 198, 1) 50%, rgba(243, 243, 235, 1) 100%);
+    background: $color12;
+    background: $linea3;
     height: 400px;
     width: 100%;
     display: flex;
@@ -220,7 +218,7 @@ body {
     height: 400px;
 }
 
-/* slide manual */
+// slide manual 
 .navigation-manual {
     position: absolute;
     width: 800px;
@@ -230,7 +228,7 @@ body {
 }
 
 .manual-btn {
-    border: 2px solid #215720;
+    border: 2px solid $color3;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -242,7 +240,7 @@ body {
 }
 
 .manual-btn:hover {
-    background: #215720;
+    background: $color3;
 }
 
 #radio1:checked~.first {
@@ -270,7 +268,7 @@ body {
 }
 
 .navigation-auto div {
-    border: 2px solid #215720;
+    border: 2px solid $color3;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -281,30 +279,30 @@ body {
 }
 
 #radio1:checked~.navigation-auto .auto-btn1 {
-    background: #215720;
+    background: $color3;
 }
 
 #radio2:checked~.navigation-auto .auto-btn2 {
-    background: #215720;
+    background: $color3;
 }
 
 #radio3:checked~.navigation-auto .auto-btn3 {
-    background: #215720;
+    background: $color3;
 }
 
 #radio4:checked~.navigation-auto .auto-btn4 {
-    background: #215720;
+    background: $color3;
 }
 
-/* info y suscri */
+// info y suscri
 .aside {
     height: 15%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(123, 123, 123);
-    background: linear-gradient(194deg, rgba(123, 123, 123, 1) 10%, rgba(127, 143, 132, 1) 22%, rgba(196, 233, 198, 1) 100%);
+    background: $linea;
+    background: $linea4;
     margin-left: auto;
     margin-right: auto;
 }
@@ -312,7 +310,7 @@ body {
 .tel {
     text-align: center;
     padding: 1em;
-    color: #fdfffd;
+    color: $color13;
 }
 
 .celu {
@@ -328,7 +326,7 @@ body {
 .envios {
     text-align: center;
     padding: 1em;
-    color: #eee;
+    color: $color7;
 }
 
 .camion {
@@ -357,12 +355,12 @@ body {
     text-align: center;
 }
 
-/* fin-- info y suscri */
+// fin-- info y suscri
 
-/* footer */
+//  footer
 .footer {
-    background: rgb(123, 123, 123);
-    background: linear-gradient(16deg, rgba(123, 123, 123, 1) 10%, rgba(127, 143, 132, 1) 22%, rgba(196, 233, 198, 1) 100%);
+    background: $linea;
+    background: $linea2;
     padding: 1em 1em;
     display: flex;
     justify-content: space-between;
@@ -372,7 +370,7 @@ body {
 .footer .titulofin {
     width: 30%;
     padding: 10px;
-    color: #215720;
+    color: $color3;
     font-family: 'Luckiest Guy', cursive;
 }
 
@@ -389,7 +387,7 @@ body {
 .logofin {
     width: 70px;
     height: 70px;
-    background: #dee9d8;
+    background: $color4;
     text-decoration: none;
     text-align: center;
     line-height: 70px;
@@ -399,12 +397,12 @@ body {
     border-radius: 50%;
     position: relative;
     overflow: hidden;
-    border: 1px solid #000;
+    border: 1px solid $color5;
 }
 
 .logofin .fa {
     position: relative;
-    color: #262626;
+    color: $color6;
     transition: 0.5s;
     z-index: 3;
 
@@ -417,7 +415,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #eee;
+    background: $color7;
     transition: 0.5s;
 }
 
@@ -427,7 +425,7 @@ body {
 
 .logofin:hover .fa-instagram {
     transform: rotateY(360deg);
-    color: #e1306c;
+    color: $color8;
 }
 
 .footer .menufin {
@@ -435,7 +433,7 @@ body {
 }
 
 .menufin li {
-    background-color: #dee9d8;
+    background-color: $color4;
     border: 1px solid;
     border-radius: 5px;
     // font-size: 25px;
@@ -448,20 +446,19 @@ body {
 
 .menufin.menu3 {
     font-size: 25px;
-    color: #444644;
+    color: $color9;
 }
 
 .menu3 :hover {
-    color: #7f8f85;
+    color: $color10;
 }
 
 .suscri {
-   
     .sus {
         .email {
             width: 220px;
         }
-        
+
     }
 }
 
@@ -472,11 +469,12 @@ body {
 
     .suscri {
         font-size: 20px;
+
         .sus {
             .email {
                 width: 170px;
             }
-            
+
         }
     }
 }

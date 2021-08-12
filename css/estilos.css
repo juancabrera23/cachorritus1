@@ -21,7 +21,6 @@ body {
   margin-right: auto;
 }
 
-/*--titulo---*/
 .titulo1 h1 {
   font-size: 100px;
   color: #215720;
@@ -30,7 +29,6 @@ body {
   margin: 10px 200px;
 }
 
-/* efecto de titulo1 */
 .titulo1 h1 {
   -webkit-animation: tracking-in-contract-bck-top 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   animation: tracking-in-contract-bck-top 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -68,8 +66,6 @@ body {
     opacity: 1;
   }
 }
-/* fi de efecto */
-/*----nav--menu----*/
 #logo {
   width: 150px !important;
   height: 150px !important;
@@ -112,8 +108,6 @@ body {
   justify-content: flex-end;
 }
 
-/* fin de nav */
-/* main---imagenes */
 .main {
   height: 100%;
   width: 100%;
@@ -159,7 +153,6 @@ body {
   transform: scale(1.1);
 }
 
-/* -- inicio slider -- */
 .section2 {
   background: #f3f3eb;
   background: linear-gradient(0deg, #f3f3eb 0%, #c4e9c6 50%, #f3f3eb 100%);
@@ -197,7 +190,6 @@ body {
   height: 400px;
 }
 
-/* slide manual */
 .navigation-manual {
   position: absolute;
   width: 800px;
@@ -273,14 +265,13 @@ body {
   background: #215720;
 }
 
-/* info y suscri */
 .aside {
   height: 15%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #7b7b7b;
+  background: linear-gradient(180deg, #7b7b7b 10%, #7f8f84 22%, #f3f3eb 100%);
   background: linear-gradient(194deg, #7b7b7b 10%, #7f8f84 22%, #c4e9c6 100%);
   margin-left: auto;
   margin-right: auto;
@@ -333,10 +324,8 @@ body {
   text-align: center;
 }
 
-/* fin-- info y suscri */
-/* footer */
 .footer {
-  background: #7b7b7b;
+  background: linear-gradient(180deg, #7b7b7b 10%, #7f8f84 22%, #f3f3eb 100%);
   background: linear-gradient(16deg, #7b7b7b 10%, #7f8f84 22%, #c4e9c6 100%);
   padding: 1em 1em;
   display: flex;
