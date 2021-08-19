@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="alimento para perro, alimento para gato, royal canin, pro plan, cachorritus, accesorios para perros, accesorios para gatos, perro, gato, pelotas para perros, golosinas para perros">
-	<meta name="author" content="Juan Gabriel Cabrera">
-	<meta name="country" content="Argentina">
-	<meta name="city" content=""Buenos Aires>
-	<meta name="languaje" content="Spanish">
-	<meta name="description" content="Encontrá en Cachorritus los mejores productos para mascotas. Compra online alimento, accesorios y mucho más!">
+    <meta name="keywords"
+        content="alimento para perro, alimento para gato, royal canin, pro plan, cachorritus, accesorios para perros, accesorios para gatos, perro, gato, pelotas para perros, golosinas para perros">
+    <meta name="author" content="Juan Gabriel Cabrera">
+    <meta name="country" content="Argentina">
+    <meta name="city" content="" Buenos Aires>
+    <meta name="languaje" content="Spanish">
+    <meta name="description"
+        content="Encontrá en Cachorritus los mejores productos para mascotas. Compra online alimento, accesorios y mucho más!">
     <title>Golosinas | cachorritus</title>
     <link rel="stylesheet" href="../css/golosinas.css">
+    <link rel="shortcut icon" href="../images/ico.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
@@ -22,17 +25,16 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-    <!-- bootstrap -->
+
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/bootstrap.min.js"></script>
-    <!-- fin bootstrap -->
 </head>
 
 <body>
     <header class="header">
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-md navbar-light ">
-                <div class="container">
+        <div class="container ">
+            <nav id="menu" class="navbar navbar-expand-lg navbar-light  ">
+                <div class="container nv">
                     <a href="../index.html" class="navbar-brand">
                         <img id="logo" src="../images/logo.PNG" alt="LogoCachorritus">
                     </a>
@@ -40,23 +42,24 @@
                         data-bs-target="#MenuNavegacion" aria-controls="navbarnav">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div id="MenuNavegacion" class="collapse navbar-collapse">
-                        <ul class="navbar-nav ms-auto">
+                    <div id="MenuNavegacion" class="collapse navbar-collapse max-height ">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                             <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
                             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="alimento.html"
                                     role="button" data-bs-toggle="dropdown">Alimento</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="alimento.html" class="dropdown-item">Alimento seco</a></li>
                                     <li><a href="alimento.html" class="dropdown-item">Alimento Humedo</a></li>
-                                    <li><a class="dropdown-item" href="alimento.html">alimentos medicados</a></li>
+                                    <li><a class="dropdown-item" href="alimento.html">Alimentos medicados</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="accesorios.html"
                                     role="button" data-bs-toggle="dropdown">Accesorios</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="accesorios.html"> juguetes </a> </li>
+                                    <li><a class="dropdown-item" href="accesorios.html"> Juguetes </a> </li>
                                     <li><a class="dropdown-item" href="accesorios.html"> camas y cuchas </a> </li>
-                                    <li><a class="dropdown-item" href="accesorios.html"> comederos y bebederos </a> </li>
+                                    <li><a class="dropdown-item" href="accesorios.html"> comederos y bebederos </a>
+                                    </li>
                                     <li><a class="dropdown-item" href="accesorios.html"> elementos de paseos </a></li>
                                     <li><a class="dropdown-item" href="accesorios.html"> rascadores </a> </li>
                                     <li><a class="dropdown-item" href="accesorios.html"> transportadoras </a> </li>
@@ -65,9 +68,9 @@
                             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="golosinas.html"
                                     role="button" data-bs-toggle="dropdown">Golosinas</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">snacks secas</a></li>
-                                    <li><a class="dropdown-item" href="#">huesos y cueros</a></li>
-                                    <li><a class="dropdown-item" href="#">snacks cat</a></li>
+                                    <li><a class="dropdown-item" href="golosinas.html">snacks secas</a></li>
+                                    <li><a class="dropdown-item" href="golosinas.html">huesos y cueros</a></li>
+                                    <li><a class="dropdown-item" href="golosinas.html">snacks cat</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="indumentaria.html"
@@ -92,53 +95,55 @@
                             </li>
                         </ul>
                     </div>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-
-                    <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
-                            <i class="fad fa-shopping-cart"></i>
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                        </button>
-                    </form>
                 </div>
             </nav>
+            <div class="iconos">
+                <form id="bus" class="d-flex ">
+                    <input id="buscar" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i class="fad fa-search"></i></button>
+                </form>
+
+                <form id="compra" class="d-flex">
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="fad fa-shopping-cart"></i>
+                        <span class="badge bg-success text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+            </div>
         </div>
     </header>
     <main id="caja">
         <!-- bootstrap -->
-        <section class="guia">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                    <li class="breadcrumb-item active"><a href="golosinas.html">Golosinas</a></li>
-                </ol>
-            </nav>
-        </section>
-
-
         <section>
-            <div class="sub px-4 px-lg-5 mt-5">
-                <div class="resultados-busca-filtros">
-                    <fieldset class="orderBy">
-                        <label>Ordenar por:</label>
-                        <select id="O">
-                            <option value="OrderByTopSaleDESC">Lo más vendidos</option>
-                            <option value="OrderByPriceASC">Precios más bajo</option>
-                            <option value="OrderByPriceDESC">Precios más alto</option>
-                            <option value="OrderByReviewRateDESC">Mejor Valoradas</option>
-                            <option value="OrderByNameASC">A - Z</option>
-                            <option value="OrderByNameDESC">Z - A</option>
-                        </select>
-                    </fieldset>
+            <div class="sub px-4 px-lg-5 mt-2">
+                <div id="gb" class="container px-lg-5">
+                    <div class="guia">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                                <li class="breadcrumb-item active"><a href="alimento.html">Golosinas</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="resultados-busca-filtros">
+                        <fieldset class="orderBy">
+                            <label>Ordenar por:</label>
+                            <select id="O">
+                                <option value="OrderByTopSaleDESC">Lo más vendidos</option>
+                                <option value="OrderByPriceASC">Precios más bajo</option>
+                                <option value="OrderByPriceDESC">Precios más alto</option>
+                                <option value="OrderByReviewRateDESC">Mejor Valoradas</option>
+                                <option value="OrderByNameASC">A - Z</option>
+                                <option value="OrderByNameDESC">Z - A</option>
+                            </select>
+                        </fieldset>
+                    </div>
                 </div>
                 <!-- card -->
-                <div class="container px-4 px-lg-5 mt-5">
-                    <div class="row gx-2 gx-lg-2 row-cols-2 row-cols-md-3 row-cols-xl-4 ">
+                <div class="container px-4 px-lg-5 mt-2">
+                    <div class="row gx-2 gx-lg-2 row-cols-1 row-cols-md-3 row-cols-xl-4 ">
                         <div class="col mb-2">
-                            <div class="card h-100">
+                            <div class="card border-success text-dark bg-light h-100">
                                 <img src="../images/golo1.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">MON AMI</h5>
@@ -149,85 +154,81 @@
                                     </div>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="fa-pull-right"><a class="btn btn-outline-dark mt-auto"
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
                                             href="#">comprar</a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col mb-2">
-                            <div class="card h-100">
+                            <div class="card border-success text-dark bg-light h-100">
                                 <img src="../images/golo2.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">BOCADITOS</h5>
                                     <p class="card-text">Snacks mix pollo fortificados con vitaminas </p>
                                     <div class="text-center">
-                                        <!-- Product price-->
                                         <span class="text-muted text-decoration-line-through">$50.00</span>
                                         $25.00
                                     </div>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="fa-pull-right"><a class="btn btn-outline-dark mt-auto"
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
                                             href="#">comprar</a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col mb-2">
-                            <div class="card h-100">
+                            <div class="card border-success text-dark bg-light h-100">
                                 <img src="../images/golo3.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">PEDIGREE</h5>
                                     <p class="card-text">Snacks rodeo de carne</p>
                                     <div class="text-center">
-                                        <!-- Product price-->
                                         <span class="text-muted text-decoration-line-through">$50.00</span>
                                         $25.00
                                     </div>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="fa-pull-right"><a class="btn btn-outline-dark mt-auto"
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
                                             href="#">comprar</a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col mb-2">
-                            <div class="card h-100">
+                            <div class="card border-success text-dark bg-light h-100">
                                 <img src="../images/golo4.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">GoloMiau</h5>
                                     <p class="card-text">Bocaditos de la granja sabor pollo</p>
                                     <div class="text-center">
-                                        <!-- Product price-->
                                         <span class="text-muted text-decoration-line-through">$50.00</span>
                                         $25.00
                                     </div>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="fa-pull-right"><a class="btn btn-outline-dark mt-auto"
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
                                             href="#">comprar</a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col mb-2">
-                            <div class="card h-100">
+                            <div class="card border-success text-dark bg-light h-100">
                                 <img src="../images/golo5.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">AnimalRed</h5>
                                     <p class="card-text">Hueso saborizado</p>
                                     <div class="text-center">
-                                        <!-- Product price-->
                                         <span class="text-muted text-decoration-line-through">$50.00</span>
                                         $25.00
                                     </div>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="fa-pull-right"><a class="btn btn-outline-dark mt-auto"
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
                                             href="#">comprar</a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col mb-2">
-                            <div class="card h-100">
+                            <div class="card border-success text-dark bg-light h-100">
                                 <img src="../images/golo6.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">DENTALIFE</h5>
@@ -235,98 +236,93 @@
                                         ayuda a limpiar los diente
                                     </p>
                                     <div class="text-center">
-                                        <!-- Product price-->
                                         <span class="text-muted text-decoration-line-through">$50.00</span>
                                         $25.00
                                     </div>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="fa-pull-right"><a class="btn btn-outline-dark mt-auto"
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
                                             href="#">comprar</a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col mb-2">
-                            <div class="card h-100">
+                            <div class="card border-success text-dark bg-light h-100">
                                 <img src="../images/golo7.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">FELIX</h5>
                                     <p class="card-text">Bocaditos Purina Felix travesuras original mix </p>
                                     <div class="text-center">
-                                        <!-- Product price-->
                                         <span class="text-muted text-decoration-line-through">$50.00</span>
                                         $25.00
                                     </div>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="fa-pull-right"><a class="btn btn-outline-dark mt-auto"
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
                                             href="#">comprar</a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col mb-2">
-                            <div class="card h-100">
+                            <div class="card border-success text-dark bg-light h-100">
                                 <img src="../images/golo8.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">NATURALISTIC</h5>
                                     <p class="card-text">Bocaditos salmon chips</p>
                                     <div class="text-center">
-                                        <!-- Product price-->
                                         <span class="text-muted text-decoration-line-through">$50.00</span>
                                         $25.00
                                     </div>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="fa-pull-right"><a class="btn btn-outline-dark mt-auto"
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
                                             href="#">comprar</a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col mb-2">
-                            <div class="card h-100">
+                            <div class="card border-success text-dark bg-light h-100">
                                 <img src="../images/golo9.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">AnimalRed</h5>
                                     <p class="card-text">Hueso de cuero clasico</p>
                                     <div class="text-center">
-                                        <!-- Product price-->
                                         <span class="text-muted text-decoration-line-through">$50.00</span>
                                         $25.00
                                     </div>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="fa-pull-right"><a class="btn btn-outline-dark mt-auto"
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
                                             href="#">comprar</a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col mb-2">
-                            <div class="card h-100">
+                            <div class="card border-success text-dark bg-light h-100">
                                 <img src="../images/golo10.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">GOOFY</h5>
                                     <p class="card-text">Huesitos extra calcio</p>
                                     <div class="text-center">
-                                        <!-- Product price-->
                                         <span class="text-muted text-decoration-line-through">$50.00</span>
                                         $25.00
                                     </div>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="fa-pull-right"><a class="btn btn-outline-dark mt-auto"
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
                                             href="#">comprar</a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col mb-2">
-                            <div class="card h-100">
+                            <div class="card border-success text-dark bg-light h-100">
                                 <img src="../images/golo11.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Dental-Plus</h5>
                                     <p class="card-text">Aliento fresco y dientes limpioaccesorios.html</p>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="fa-pull-right"><a class="btn btn-outline-dark mt-auto"
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
                                             href="#">comprar</a></div>
                                 </div>
                             </div>
@@ -356,6 +352,13 @@
                 <!--formulario-->
 
             </ul>
+        </div>
+        <div class="suscri">
+            <form class="sus">
+                <h4>Suscribite y recibí descuentos increíbles!</h4>
+                <input class="form-control me-2" type="email" placeholder="ingresa tu email" name="email">
+                <input class="form-control me-2" type="submit" value="suscribirme!">
+            </form>
         </div>
 
     </footer>

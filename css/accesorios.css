@@ -17,10 +17,11 @@ body {
 }
 
 #logo {
-  width: 150px;
-  height: 150px;
+  width: 150px !important;
+  height: 150px !important;
   margin: 5px;
   border-radius: 50%;
+  margin-right: 10rem;
 }
 
 .nav-item {
@@ -41,30 +42,36 @@ body {
   border-radius: 5px;
 }
 
-.d-flex {
-  margin-right: 1em;
+.d-flex #buscar {
+  width: 180px;
 }
 
-nav {
+.iconos {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+}
+.iconos #compra {
+  margin-left: 1rem;
 }
 
 #caja {
-  width: calc(20vw + 946px);
   height: auto;
   margin: 20px auto;
 }
 
-.guia a {
-  color: #215720;
-}
-
-.sub {
+section .sub {
   width: auto;
   height: auto;
   overflow: hidden;
+}
+section #gb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+section #gb .guia a {
+  color: #215720;
 }
 
 .footer {
@@ -117,6 +124,7 @@ nav {
 }
 
 .logofin:before {
+  content: "";
   position: absolute;
   top: 100%;
   left: 0;
@@ -145,7 +153,6 @@ nav {
   background-color: #dee9d8;
   border: 1px solid;
   border-radius: 5px;
-  font-size: 25px;
 }
 
 .menu {
@@ -161,21 +168,443 @@ nav {
   color: #7f8f85;
 }
 
-@media screen and (max-width: 360px) {
-  body {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+.suscri {
+  height: 20%;
+  width: 30%;
+  padding: 20px 10px;
+  font-size: 30px;
+}
+
+.suscri .sus {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1028px) {
+  .titulofin h5 {
+    font-size: 70px;
+  }
+
+  .suscri {
+    font-size: 20px;
+  }
+  .suscri .sus .email {
+    width: 170px;
   }
 }
-@media screen and (max-width: 768px) {
-  body {
-    display: grid;
-    grid-template-columns: repeat(0, 1fr 1fr);
+@media only screen and (max-width: 1024px) {
+  #logo {
+    margin-right: 2rem;
+  }
+
+  .titulofin h5 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .titulofin p {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .suscri {
+    font-size: 20px;
+  }
+
+  .suscri .sus .email {
+    width: 170px;
   }
 }
-@media screen and (max-width: 1024px) {
-  body {
-    display: grid;
-    grid-template-columns: repeat(0, 1fr 1fr);
+@media only screen and (max-width: 992px) {
+  .titulofin h5 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .titulofin p {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .suscri {
+    font-size: 20px;
+  }
+
+  .suscri .sus .email {
+    width: 180px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .titulofin h5 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .titulofin p {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .suscri {
+    font-size: 20px;
+  }
+
+  .suscri .sus .email {
+    width: 180px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bus .me-2 {
+    width: 100px;
+  }
+
+  .titulofin h5 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .titulofin p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .menufin .menu3 .menu {
+    font-size: 20px;
+  }
+
+  .suscri {
+    font-size: 20px;
+  }
+
+  .suscri .sus .email {
+    width: 180px;
+  }
+
+  .suscri .sus h4 {
+    text-align: start;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .suscri .sus .email {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .suscri .sus .email {
+    width: 140px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #logo {
+    margin-right: 1px;
+  }
+
+  .nv {
+    justify-content: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titulofin {
+    width: 100% !important;
+  }
+  .titulofin p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .menufin .menu3 .menu {
+    font-size: 15px;
+  }
+
+  .suscri {
+    width: 100% !important;
+    font-size: 20px;
+  }
+
+  .suscri .sus h4 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 497px) {
+  #logo {
+    margin-right: 1px;
+  }
+
+  .nv {
+    justify-content: center;
+  }
+
+  #gb {
+    font-size: 10px;
+  }
+  #gb .guia {
+    margin-right: 2rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titulofin {
+    width: 100% !important;
+  }
+  .titulofin p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .menufin .menu3 .menu {
+    font-size: 15px;
+  }
+
+  .suscri {
+    width: 100% !important;
+    font-size: 20px;
+  }
+
+  .suscri .sus h4 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 427px) {
+  #logo {
+    margin-right: 1px;
+  }
+
+  .nv {
+    justify-content: center;
+  }
+
+  #gb {
+    font-size: 10px;
+  }
+  #gb .guia {
+    margin-right: 2rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titulofin {
+    width: 100% !important;
+  }
+  .titulofin p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .menufin .menu3 .menu {
+    font-size: 15px;
+  }
+
+  .suscri {
+    width: 100% !important;
+    font-size: 20px;
+  }
+
+  .suscri .sus h4 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #logo {
+    margin-right: 1px;
+  }
+
+  .nv {
+    justify-content: center;
+  }
+
+  #gb {
+    font-size: 10px;
+  }
+  #gb .guia {
+    margin-right: 2rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titulofin {
+    width: 100% !important;
+  }
+  .titulofin p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .menufin .menu3 .menu {
+    font-size: 15px;
+  }
+
+  .suscri {
+    width: 100% !important;
+    font-size: 20px;
+  }
+
+  .suscri .sus h4 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #logo {
+    margin-right: 1px;
+  }
+
+  #gb {
+    font-size: 10px;
+  }
+  #gb .guia {
+    margin-right: 2rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titulofin {
+    width: 100% !important;
+  }
+  .titulofin p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .menufin .menu3 .menu {
+    font-size: 15px;
+  }
+
+  .suscri {
+    width: 100% !important;
+    font-size: 20px;
+  }
+
+  .suscri .sus h4 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .header {
+    padding: 0.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+  }
+
+  #logo {
+    margin-right: 1px;
+  }
+
+  .bus #buscar {
+    width: 1% !important;
+    height: 2px !important;
+  }
+
+  #gb {
+    font-size: 10px;
+  }
+  #gb .guia {
+    margin-right: 2rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titulofin h5 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .titulofin {
+    width: 100% !important;
+  }
+  .titulofin p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .menufin .menu3 .menu {
+    font-size: 15px;
+  }
+
+  .suscri {
+    width: 100% !important;
+    font-size: 20px;
+  }
+
+  .suscri .sus .email {
+    width: 180px;
+  }
+
+  .suscri .sus h4 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .header {
+    padding: 0.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+  }
+
+  #logo {
+    margin-right: 1px;
+  }
+
+  .bus #buscar {
+    width: 1%;
+    height: 2px;
+  }
+
+  #gb {
+    font-size: 10px;
+  }
+  #gb .guia {
+    margin-right: 2rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titulofin h5 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .titulofin {
+    width: 100% !important;
+  }
+  .titulofin p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .menufin .menu3 .menu {
+    font-size: 15px;
+  }
+
+  .suscri {
+    width: 100% !important;
+    font-size: 20px;
+  }
+
+  .suscri .sus .email {
+    width: 180px;
+  }
+
+  .suscri .sus h4 {
+    text-align: center;
   }
 }/*# sourceMappingURL=accesorios.css.map */
