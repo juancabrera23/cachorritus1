@@ -10,7 +10,6 @@ body {
 }
 
 .header {
-  height: 100%;
   width: 100%;
   background: #7b7b7b;
   background: linear-gradient(180deg, #7b7b7b 10%, #7f8f84 22%, #f3f3eb 100%);

@@ -1,18 +1,16 @@
 @import "colores";
 
-
-* {
+*{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none !important;
-
 }
 
-
-body {
-    background:  $color1  !important;
+body{
+    background: $color1 !important;
 }
+
 @import "header";
 
 @import "navbar";

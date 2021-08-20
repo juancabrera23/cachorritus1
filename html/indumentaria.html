@@ -1,35 +1,372 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="alimento para perro, alimento para gato, royal canin, pro plan, cachorritus, accesorios para perros, accesorios para gatos, perro, gato, pelotas para perros, golosinas para perros">
-	<meta name="author" content="Juan Gabriel Cabrera">
-	<meta name="country" content="Argentina">
-	<meta name="city" content=""Buenos Aires>
-	<meta name="languaje" content="Spanish">
-	<meta name="description" content="Encontrá en Cachorritus los mejores productos para mascotas. Compra online alimento, accesorios y mucho más!">
+    <meta name="keywords"
+        content="alimento para perro, alimento para gato, royal canin, pro plan, cachorritus, accesorios para perros, accesorios para gatos, perro, gato, pelotas para perros, golosinas para perros">
+    <meta name="author" content="Juan Gabriel Cabrera">
+    <meta name="country" content="Argentina">
+    <meta name="city" content="" Buenos Aires>
+    <meta name="languaje" content="Spanish">
+    <meta name="description"
+        content="Encontrá en Cachorritus los mejores productos para mascotas. Compra online alimento, accesorios y mucho más!">
     <title>Indumentaria | Cachorritus</title>
+<link rel="stylesheet" href="../css/indumentaria.css">
+
+    <link rel="shortcut icon" href="../images/ico.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
 </head>
+
 <body>
-   
-    <header>
-        <a href="index.html"><img src="../imagenes/logo.PNG" style="width: 100px;height: 100px;" alt="logo de cachorritus"></a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="alimento.html">alimento</a></li>
-                <li><a href="golosinas.html">golosinas</a></li>
-                <li><a href="accesorios.html">accesorios</a></li>
-                <li><a href="indumentaria.html">indumentaria</a></li>
+    <header class="header">
+        <div class="container ">
+            <nav id="menu" class="navbar navbar-expand-lg navbar-light  ">
+                <div class="container nv">
+                    <a href="../index.html" class="navbar-brand">
+                        <img id="logo" src="../images/logo.PNG" alt="LogoCachorritus">
+                    </a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                        data-bs-target="#MenuNavegacion" aria-controls="navbarnav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="MenuNavegacion" class="collapse navbar-collapse max-height ">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="alimento.html"
+                                    role="button" data-bs-toggle="dropdown">Alimento</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="alimento.html" class="dropdown-item">Alimento seco</a></li>
+                                    <li><a href="alimento.html" class="dropdown-item">Alimento Humedo</a></li>
+                                    <li><a class="dropdown-item" href="alimento.html">Alimentos medicados</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="accesorios.html"
+                                    role="button" data-bs-toggle="dropdown">Accesorios</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="accesorios.html"> Juguetes </a> </li>
+                                    <li><a class="dropdown-item" href="accesorios.html"> camas y cuchas </a> </li>
+                                    <li><a class="dropdown-item" href="accesorios.html"> comederos y bebederos </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="accesorios.html"> elementos de paseos </a></li>
+                                    <li><a class="dropdown-item" href="accesorios.html"> rascadores </a> </li>
+                                    <li><a class="dropdown-item" href="accesorios.html"> transportadoras </a> </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="golosinas.html"
+                                    role="button" data-bs-toggle="dropdown">Golosinas</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="golosinas.html">snacks secas</a></li>
+                                    <li><a class="dropdown-item" href="golosinas.html">huesos y cueros</a></li>
+                                    <li><a class="dropdown-item" href="golosinas.html">snacks cat</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="indumentaria.html"
+                                    role="button" data-bs-toggle="dropdown">Indumentaria</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="indumentaria.html"> capas </a> </li>
+                                    <li><a class="dropdown-item" href="indumentaria.html"> capas de lluvia </a> </li>
+                                    <li><a class="dropdown-item" href="indumentaria.html"> botitas </a> </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
+                                    href="esteticaehigiene.html" role="button" data-bs-toggle="dropdown">Estética e
+                                    Higiene</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="esteticaehigiene.html">cepillos, guantes y cardinas</a> </li>
+                                    <li><a class="dropdown-item" href="esteticaehigiene.html">cortauñas</a> </li>
+                                    <li><a class="dropdown-item" href="esteticaehigiene.html">cuidado dental</a> </li>
+                                    <li><a class="dropdown-item" href="esteticaehigiene.html">repelentes</a> </li>
+                                    <li><a class="dropdown-item" href="esteticaehigiene.html">shampoo y acondicionador </a> </li>
+                                    <li><a class="dropdown-item" href="esteticaehigiene.html">elementos sanitarios </a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="iconos">
+                <form id="bus" class="d-flex ">
+                    <input id="buscar" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i class="fad fa-search"></i></button>
+                </form>
+
+                <form id="compra" class="d-flex">
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="fad fa-shopping-cart"></i>
+                        <span class="badge bg-success text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main id="caja">
+        <!-- bootstrap -->
+        <section>
+            <div class="sub px-4 px-lg-5 mt-2">
+                <div id="gb" class="container px-lg-5">
+                    <div class="guia">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                                <li class="breadcrumb-item active"><a href="alimento.html">Indumentaria</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="resultados-busca-filtros">
+                        <fieldset class="orderBy">
+                            <label>Ordenar por:</label>
+                            <select id="O">
+                                <option value="OrderByTopSaleDESC">Lo más vendidos</option>
+                                <option value="OrderByPriceASC">Precios más bajo</option>
+                                <option value="OrderByPriceDESC">Precios más alto</option>
+                                <option value="OrderByReviewRateDESC">Mejor Valoradas</option>
+                                <option value="OrderByNameASC">A - Z</option>
+                                <option value="OrderByNameDESC">Z - A</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="container px-4 px-lg-5 mt-2">
+                    <div class="row gx-2 gx-lg-2 row-cols-1 row-cols-md-3 row-cols-xl-4 ">
+                        <div class="col mb-2">
+                            <div class="card border-success text-dark bg-light h-100">
+                                <img src="../images/indu1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">PILOTO REFLECTANTE</h5>
+                                    <p class="card-text">piloto de noche, con tiras refflectante</p>
+                                    <div class="text-center">
+                                        <span class="text-muted text-decoration-line-through">$3800</span>
+                                        $2000
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
+                                            href="#">comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-2">
+                            <div class="card border-success text-dark bg-light h-100">
+                                <img src="../images/indu2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">BOTITAS DE CUERO</h5>
+                                    <p class="card-text">botitas de cuero reforzadas</p>
+                                    <div class="text-center">
+                                        <span class="text-muted text-decoration-line-through">$800</span>
+                                        $500
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
+                                            href="#">comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-2">
+                            <div class="card border-success text-dark bg-light h-100">
+                                <img src="../images/indu3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">PILOTO LISA</h5>
+                                    <p class="card-text">Piloto tela estampada impermeable</p>
+                                    <div class="text-center">
+                                        <span class="text-muted text-decoration-line-through">$3000</span>
+                                        $1950
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
+                                            href="#">comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-2">
+                            <div class="card border-success text-dark bg-light h-100">
+                                <img src="../images/indu4.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">BUZO ROSA</h5>
+                                    <p class="card-text">Buzo rosa de algodon</p>
+                                    <div class="text-center">
+                                        <span class="text-muted text-decoration-line-through">$2400</span>
+                                        $1000
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
+                                            href="#">comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-2">
+                            <div class="card border-success text-dark bg-light h-100">
+                                <img src="../images/indu5.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">REMERA MAFIA</h5>
+                                    <p class="card-text">remera de verano</p>
+                                    <div class="text-center">
+                                        <span class="text-muted text-decoration-line-through">$2000</span>
+                                        $1000
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
+                                            href="#">comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-2">
+                            <div class="card border-success text-dark bg-light h-100">
+                                <img src="../images/indu6.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"> BUZO BULLDIDAS</h5>
+                                    <p class="card-text">espalda estampada, reforzado en la espalda para el pasado de
+                                        correa.
+                                    </p>
+                                    <div class="text-center">
+                                        <span class="text-muted text-decoration-line-through">$1600</span>
+                                        $1400
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
+                                            href="#">comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-2">
+                            <div class="card border-success text-dark bg-light h-100">
+                                <img src="../images/indu7.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">BUZO CUELLO ALTO</h5>
+                                    <p class="card-text">Buzo de algodon reforzado</p>
+                                    <div class="text-center">
+                                        <span class="text-muted text-decoration-line-through">$3000</span>
+                                        $1800
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
+                                            href="#">comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-2">
+                            <div class="card border-success text-dark bg-light h-100">
+                                <img src="../images/indu8.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">CAMPERA INFLADA</h5>
+                                    <p class="card-text">Campera inflada con cierre en la espalda</p>
+                                    <div class="text-center">
+                                        <span class="text-muted text-decoration-line-through">$2500</span>
+                                        $1400
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
+                                            href="#">comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-2">
+                            <div class="card border-success text-dark bg-light h-100">
+                                <img src="../images/indu9.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">PILOTO MARIO</h5>
+                                    <p class="card-text">Piloto tela estampada impermeable</p>
+                                    <div class="text-center">
+                                        <span class="text-muted text-decoration-line-through">$3000</span>
+                                        $2050
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
+                                            href="#">comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-2">
+                            <div class="card border-success text-dark bg-light h-100">
+                                <img src="../images/indu10.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">PILOTO T&D</h5>
+                                    <p class="card-text">Piloto tela estampada impermeable</p>
+                                    <div class="text-center">
+                                        <span class="text-muted text-decoration-line-through">$3000</span>
+                                        $2050
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
+                                            href="#">comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-2">
+                            <div class="card border-success text-dark bg-light h-100">
+                                <img src="../images/indu11.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">BOTITA SILICONA</h5>
+                                    <p class="card-text">Botitas de silicona para la lluvia</p>
+                                    <div class="text-center">
+                                        <span class="text-muted text-decoration-line-through">$900</span>
+                                        $700
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="fa-pull-right"><a class="btn btn-outline-success mt-auto"
+                                            href="#">comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        </div>
+        <!-- fin bootstrap -->
+    </main>
+    <footer class="footer">
+
+        <div class="titulofin">
+            <h5>cachorritus </h5>
+            <p>dog life style</p>
+
+            <a class="logofin" href="https://www.instagram.com/cachorritus.arg/" target="_blank"><i
+                    class="fa fa-instagram"></i></a>
+        </div>
+
+        <div class="menufin">
+            <ul class="menu3">
+
+                <li><a class="menu" href="">Inicio</a></li>
+                <li><a class="menu" href="">ubicacion</a></li>
+                <li><a class="menu" href="contacto.html">Contacto</a></li>
+                <!--formulario-->
 
             </ul>
-            <a href="#"><img src="imagenes/lupa.png" style="width: 32px;height: 32px;" alt="icono buscar"></a>
-            <a href="#"><img src="imagenes/usuario.png" style="width: 32px;height: 32px;" alt="icono cuenta"></a>
-            <a href="#"><img src="imagenes/compra.png" style="width: 32px;height: 32px;" alt="icono carrito"></a>
-        </nav>
-    </header>
- 
+        </div>
+        <div class="suscri">
+            <form class="sus">
+                <h4>Suscribite y recibí descuentos increíbles!</h4>
+                <input class="form-control me-2" type="email" placeholder="ingresa tu email" name="email">
+                <input class="form-control me-2" type="submit" value="suscribirme!">
+            </form>
+        </div>
+
+    </footer>
 </body>
+
 </html>
